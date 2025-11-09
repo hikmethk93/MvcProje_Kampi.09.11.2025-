@@ -11,6 +11,9 @@ namespace DataAccessLayer.Abstract
     {
         List<T> List(); //T türünde liste döndürecek
         void Insert(T p); //T'den parametre alır
+
+        T Get(Expression<Func<T, bool>> filter);
+
         void Delete(T p); //T'den parametre alır
         void Update(T p); //T'den parametre alır
 
