@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DataAccessLayer.Abstract;
+using EntityLayer.Concrete;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +8,9 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.EntityFramework
 {
-    internal class EfHeadingDal
+   public class EfHeadingDal:GenericRepository<Heading>, IHeadingDal
+
     {
+       
     }
 }

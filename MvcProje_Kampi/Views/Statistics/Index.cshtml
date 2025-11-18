@@ -1,0 +1,62 @@
+﻿@using EntityLayer.Concrete
+@model List<Statistics>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<br />
+<div class="container mt-4">
+    <div class="row">
+
+        <div class="col-md-3">
+            <div class="card text-white bg-primary mb-3">
+                <div class="card-header">Toplam Kategori Sayısı </div>
+                <div class="card-body">
+                    <br/>
+                    <h5 class="card-title">8</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card text-white bg-success mb-3">
+                <div class="card-header">Yazılım kategorisine ait başlık sayısı</div>
+                <div class="card-body">
+                    <h5 class="card-title">2</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card text-white bg-warning mb-3">
+                <div class="card-header">Yazar adında 'a' harfi geçen yazar sayısı</div>
+                <div class="card-body">
+                    <h5 class="card-title">3</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card text-white bg-danger mb-3">
+                <div class="card-header"> En fazla başlığa sahip kategori adları</div>
+                <div class="card-body">
+                    <h5 class="card-title">Yazılım - Dizi</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card text-white bg-danger mb-3">
+                <div class="card-header"> Kategori tablosunda durum kıyaslaması</div>
+                <div class="card-body">
+                    <h5 class="card-title">5</h5>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+
+

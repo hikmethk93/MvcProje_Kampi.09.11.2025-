@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BusinessLayer.Concrete;
+using DataAccessLayer.EntityFramework;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,10 +10,15 @@ namespace MvcProje_Kampi.Controllers
 {
     public class StatisticsController : Controller
     {
-        // GET: Statistics
+        StatisticsManager sm = new StatisticsManager(new EfStatisticsDal());
         public ActionResult Index()
         {
-            return View();
+            var StatisticsValues = sm.GetList();
+            return View(StatisticsValues);
         }
+
+
     }
 }
+
+

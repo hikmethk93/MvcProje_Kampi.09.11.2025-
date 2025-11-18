@@ -56,7 +56,9 @@
     <Compile Include="Abstract\IContactDal.cs" />
     <Compile Include="Abstract\IContenctDal.cs" />
     <Compile Include="Abstract\IHeadingDal.cs" />
+    <Compile Include="Abstract\IMessageDal.cs" />
     <Compile Include="Abstract\IRepository.cs" />
+    <Compile Include="Abstract\IStatisticsDal.cs" />
     <Compile Include="Abstract\IWriterDal.cs" />
     <Compile Include="Concrete\Context.cs" />
     <Compile Include="Concrete\Repositories\CategoryRepository.cs" />
@@ -67,11 +69,49 @@
     <Compile Include="EntityFramework\EfContactDal.cs" />
     <Compile Include="EntityFramework\EfContentDal.cs" />
     <Compile Include="EntityFramework\EfHeadingDal.cs" />
+    <Compile Include="EntityFramework\EfMessageDal.cs" />
+    <Compile Include="EntityFramework\EfStatisticsDal.cs" />
     <Compile Include="EntityFramework\EfWriterDal.cs" />
     <Compile Include="EntityFramework\GenericRepository.cs" />
     <Compile Include="Migrations\202511031256107_mig1.cs" />
     <Compile Include="Migrations\202511031256107_mig1.Designer.cs">
       <DependentUpon>202511031256107_mig1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202511102016582_FixStatisticsColumns.cs" />
+    <Compile Include="Migrations\202511102016582_FixStatisticsColumns.Designer.cs">
+      <DependentUpon>202511102016582_FixStatisticsColumns.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202511102125336_mig_writer_edit.cs" />
+    <Compile Include="Migrations\202511102125336_mig_writer_edit.Designer.cs">
+      <DependentUpon>202511102125336_mig_writer_edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202511121832101_mig_writetitle_add.cs" />
+    <Compile Include="Migrations\202511121832101_mig_writetitle_add.Designer.cs">
+      <DependentUpon>202511121832101_mig_writetitle_add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202511132143398_mig-imagesizechance.cs" />
+    <Compile Include="Migrations\202511132143398_mig-imagesizechance.Designer.cs">
+      <DependentUpon>202511132143398_mig-imagesizechance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202511132208529_mig_writer_addstatus.cs" />
+    <Compile Include="Migrations\202511132208529_mig_writer_addstatus.Designer.cs">
+      <DependentUpon>202511132208529_mig_writer_addstatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202511142157329_migration_contentstatusadd.cs" />
+    <Compile Include="Migrations\202511142157329_migration_contentstatusadd.Designer.cs">
+      <DependentUpon>202511142157329_migration_contentstatusadd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202511142201135_mig-headingstatusadd.cs" />
+    <Compile Include="Migrations\202511142201135_mig-headingstatusadd.Designer.cs">
+      <DependentUpon>202511142201135_mig-headingstatusadd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202511152217588_mig_add_message_class.cs" />
+    <Compile Include="Migrations\202511152217588_mig_add_message_class.Designer.cs">
+      <DependentUpon>202511152217588_mig_add_message_class.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202511172336249_contact_adddate.cs" />
+    <Compile Include="Migrations\202511172336249_contact_adddate.Designer.cs">
+      <DependentUpon>202511172336249_contact_adddate.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -89,6 +129,33 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202511031256107_mig1.resx">
       <DependentUpon>202511031256107_mig1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202511102016582_FixStatisticsColumns.resx">
+      <DependentUpon>202511102016582_FixStatisticsColumns.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202511102125336_mig_writer_edit.resx">
+      <DependentUpon>202511102125336_mig_writer_edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202511121832101_mig_writetitle_add.resx">
+      <DependentUpon>202511121832101_mig_writetitle_add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202511132143398_mig-imagesizechance.resx">
+      <DependentUpon>202511132143398_mig-imagesizechance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202511132208529_mig_writer_addstatus.resx">
+      <DependentUpon>202511132208529_mig_writer_addstatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202511142157329_migration_contentstatusadd.resx">
+      <DependentUpon>202511142157329_migration_contentstatusadd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202511142201135_mig-headingstatusadd.resx">
+      <DependentUpon>202511142201135_mig-headingstatusadd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202511152217588_mig_add_message_class.resx">
+      <DependentUpon>202511152217588_mig_add_message_class.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202511172336249_contact_adddate.resx">
+      <DependentUpon>202511172336249_contact_adddate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />
