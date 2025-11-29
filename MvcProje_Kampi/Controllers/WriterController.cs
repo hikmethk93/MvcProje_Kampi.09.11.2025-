@@ -12,6 +12,7 @@ using System.Web.Mvc;
 
 namespace MvcProje_Kampi.Controllers
 {
+    
     public class WriterController : Controller
     {
         WriterManager wm = new WriterManager(new EfWriterDal());
@@ -72,5 +73,6 @@ namespace MvcProje_Kampi.Controllers
             }
             return View();
         }
+       
     }
 }
